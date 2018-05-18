@@ -10,6 +10,7 @@ import java.io.Serializable;
 @Entity
 @Table(name = "ADDRESS")
 public class Address implements Serializable {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ADDRESS_PK")

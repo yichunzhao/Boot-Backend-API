@@ -11,6 +11,7 @@ import javax.persistence.Embeddable;
 @AllArgsConstructor
 @Embeddable
 public class GPSCoordinate {
+
     @Column(name = "LATITUDE")
     protected Double latitude;
 
