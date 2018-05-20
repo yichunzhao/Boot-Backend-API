@@ -1,10 +1,14 @@
 package com.buildermarket.backend.entities;
 
+import lombok.Data;
+
 import javax.persistence.*;
 import java.io.Serializable;
 
 
+@Data
 @Entity
+@Table(name = "ACCOUNT")
 public class Account implements Serializable {
 
     @Id

@@ -18,6 +18,6 @@ public class LoginInfo {
     @Column(name = "PASSWORD")
     protected String password;
 
-    @OneToMany(mappedBy = "account", targetEntity = UserRole.class)
-    protected Set<UserRole> roles = new HashSet<>();
+    @OneToMany(mappedBy = "account", targetEntity = Role.class)
+    protected Set<Role> roles = new HashSet<>();
 }

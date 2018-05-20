@@ -1,13 +1,15 @@
 package com.buildermarket.backend.entities;
 
 import com.buildermarket.backend.domainmodel.Roles;
+import lombok.Data;
 
 import javax.persistence.*;
 import java.io.Serializable;
 
+@Data
 @Entity
 @Table(name = "ACCOUNT_ROLES")
-public class UserRole implements Serializable {
+public class Role implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,6 +23,5 @@ public class UserRole implements Serializable {
     @ManyToOne
     @JoinColumn(name = "ACCOUNT_ID_FK", referencedColumnName = "ACCOUNT_ID_PK")
     protected Account account;
-
 
 }

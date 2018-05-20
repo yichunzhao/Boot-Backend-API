@@ -24,6 +24,7 @@ public class AddressRepositoryTest {
     public AddressRepositoryTest() {
     }
 
+
     @Test
     public void testTestEntityManager() {
         assertNotNull(testEntityManager);
@@ -49,6 +50,7 @@ public class AddressRepositoryTest {
 
         //then
         assertNotNull(found);
+
 
     }
 }
