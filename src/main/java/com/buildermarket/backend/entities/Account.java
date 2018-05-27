@@ -1,15 +1,15 @@
 package com.buildermarket.backend.entities;
 
-import lombok.Data;
-
+import lombok.Getter;
+import lombok.Setter;
 import javax.persistence.*;
 import java.io.Serializable;
 
 
-@Data
-@Entity
-@Table(name = "ACCOUNT")
-public class Account implements Serializable {
+@Setter
+@Getter
+@MappedSuperclass
+public abstract class Account implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
